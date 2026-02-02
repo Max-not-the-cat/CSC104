@@ -1,0 +1,45 @@
+<!-- Code comments are a way that we communicate to other web developers about what's happening on the page
+ Ctrl + ? is the shortcut to creating a comment in VS Code 
+ The DOCTYPE tag tells the browser which version of HTML the page is coded in; the value of HTML = HTML5 (current version) -->
+<!DOCTYPE html>
+
+<!-- The page configuration and content goes between the HTML tags; lang="en" is added by default by VS Code - you can leave it -->
+<html lang="en">
+<!-- head section has configuration info for the browser and search engines -->
+<head>
+    <style>
+        h1{
+            font-weight: normal;
+        }
+    </style>
+    <!-- tells the browser pretty much any character from any language may be on this page -->
+    <meta charset="UTF-8">
+<!-- this is the first step in responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- title is the text in the browser tab; keep it short, sweet, and descriptive -->
+    <title>Basics page for CSC104</title>
+</head>
+<!-- body is where all of the page content goes -->
+<body>
+<!-- the header tag is one of our HTML5 semantic tags; it helps give meaning to our content; header should be at the top of the page; it will generally hold things like a menu, logo, page title, etc. -->
+    <header>
+        <!-- h1 is the top level, heading 1 tag; use this for the title of your webpage; there should be 1 and only 1 h1 tag on a webpage -->
+        <h1>Basics page for CSC104</h1>
+    </header>
+    <!-- put the core content of the webpage in the main section; the core content is dependant upon the theme of the website -->
+    <main>
+        <!-- h2 is the second level heading; I am using it ias a subtitle for different sections of the webpage -->
+        <h2>Intro to HTML</h2>
+        <!-- p tag is the paragraph tag; by default there will be spacing around the p tag -->
+        <p>
+            HTML stands for HyperText Markup Language. HTML provides the structure of our webpages by putting tags around text and images (otherwise known as marking up the text).
+        </p>
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+<!-- This should be the last tag on your webpage -->
+</html>
