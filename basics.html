@@ -18,6 +18,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- title is the text in the browser tab; keep it short, sweet, and descriptive -->
     <title>Basics page for CSC104</title>
+<!-- this is embedded CSS - it should be in the head section -->
+    <style>
+        body{
+            background-color: rgb(14, 14, 87);
+            color: white;
+        }
+
+    </style>
 </head>
 <!-- body is where all of the page content goes -->
 <body>
@@ -34,6 +42,51 @@
         <p>
             HTML stands for HyperText Markup Language. HTML provides the structure of our webpages by putting tags around text and images (otherwise known as marking up the text).
         </p>
+<!-- Heading level 3 -->
+        <h3>History of HTML</h3>
+<!-- ul is unordered list -->
+        <ul>
+            <!-- li is list item - by default you will get abullet point in front of your text -->
+            <li>HTML 1.0 - developed in the early 1990s</li>
+            <li>HTML 2.0 - released in 1995</li>
+            <li>HTML 3.2 - released in 1997</li>
+            <li>HTML 4.01 - released in 1999</li>
+            <li>HTML 5 - released in 2014 - living standard/current version</li>
+        </ul>
+
+        <h2>Intro to CSS</h2>
+        <p>CSS stands for Cascading Style Sheets. CSS can control the layout, colors, fonts - any visual element on the page can be controlled with CSS.</p>
+
+        <h3>History of CSS</h3>
+        <ul>
+            <li>CSS1 - released in 1996</li>
+            <li>CSS2 - released in 1998</li>
+            <li>CSS3 - released in 2011 - living standard/current version</li>
+        </ul>
+
+        <h3>Basic Structure</h3>
+        <!-- pre tags allow you to display code and the browser will leave it alone -->
+        <pre>
+    selector{
+        property: value;
+    }        
+        </pre>
+
+        <h3>The CSS groups of 3</h3>
+        <!-- this is an Inline style - use sparingly -->
+        <h4 style="color: green;">3 ways to include CSS in our pages</h4>
+        <ul>
+            <li>External (seperate CSS file)</li>
+            <li>Embedded (place the CSS on a single HTML page)</li>
+            <li>Inline (add CSS to a particular HTML element)</li>
+        </ul>
+
+        <h4>CSS Selectors</h4>
+        <ul>
+            <li>HTML element (easiest, most global)</li>
+            <li>Custon class (we create a selector - add . at the beginning)</li>
+            <li>ID of an HTML element (add # at the beginning of the selector name)</li>
+        </ul>
     </main>
 
     <footer>
