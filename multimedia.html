@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia Example</title>
+    <!-- Embedded CSS styles; best practice is to use external CSS -->
+     <style>
+        body{
+            background-color:rgb(103, 103, 230);
+            color: black;
+        }
+        /* this style will apply to every image on the page */
+        img{
+            width: 200px;
+            height: 200px;
+        }
+
+        .otherImages{
+            width: 400px;
+            height: auto;
+        }
+     </style>
+</head>
+<body>
+    <header>
+        <h1>Multimedia Example</h1>
+    </header>
+    <main>
+        <!-- Image -->
+        <section>
+            <h2>Images</h2>
+            <!-- width="200" is valid HTML that the browser will use; it is better to resize images with CSS -->
+            <img id="SiteImage" src="beach_image.jpg" alt="beach">
+            <img id="SiteImage" src="beach_image.jpg" alt="beach" class="otherImages">
+            <img id="SiteImage" src="beach_image.jpg" alt="beach" class="otherImages">
+            <!-- please, please, please, use relative filt paths (as opposed to absolute paths) -->
+        </section>
+        <!-- Audio -->
+        <section>
+            <h2>Audio</h2>
+
+            <audio controls>
+                <!-- note to self: find a sound -->
+                <source src="Real_sound.mp3" type="audio/mp3">
+                <!-- you can specify multiple audio files, the browser will try to play the first audio file; if the browser cant plat the first file, it will try to play the second file and so on -->
+                <source src="Real_sound.wav" type="audio/wav">
+                Your browser does not support the audio element
+            </audio>
+            <p>If the audio is not decorative, include a transcript of the information for the userts who cannot hear the audio</p>
+        </section>
+
+        <section>
+
+            <h2>Video</h2>
+            <video controls>
+                <source src="Very_real_video.mp4">
+                Your browser does not uspport the video element
+            </video>
+        </section>
+    </main>
+</body>
+</html>
