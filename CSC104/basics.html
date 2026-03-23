@@ -1,0 +1,98 @@
+<!-- Code comments are a way that we communicate to other web developers about what's happening on the page
+ Ctrl + ? is the shortcut to creating a comment in VS Code 
+ The DOCTYPE tag tells the browser which version of HTML the page is coded in; the value of HTML = HTML5 (current version) -->
+<!DOCTYPE html>
+
+<!-- The page configuration and content goes between the HTML tags; lang="en" is added by default by VS Code - you can leave it -->
+<html lang="en">
+<!-- head section has configuration info for the browser and search engines -->
+<head>
+    <style>
+        h1{
+            font-weight: normal;
+        }
+    </style>
+    <!-- tells the browser pretty much any character from any language may be on this page -->
+    <meta charset="UTF-8">
+<!-- this is the first step in responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- title is the text in the browser tab; keep it short, sweet, and descriptive -->
+    <title>Basics page for CSC104</title>
+<!-- this is embedded CSS - it should be in the head section -->
+    <style>
+        body{
+            background-color: rgb(14, 14, 87);
+            color: white;
+        }
+
+    </style>
+</head>
+<!-- body is where all of the page content goes -->
+<body>
+<!-- the header tag is one of our HTML5 semantic tags; it helps give meaning to our content; header should be at the top of the page; it will generally hold things like a menu, logo, page title, etc. -->
+    <header>
+        <!-- h1 is the top level, heading 1 tag; use this for the title of your webpage; there should be 1 and only 1 h1 tag on a webpage -->
+        <h1>Basics page for CSC104</h1>
+    </header>
+    <!-- put the core content of the webpage in the main section; the core content is dependant upon the theme of the website -->
+    <main>
+        <!-- h2 is the second level heading; I am using it ias a subtitle for different sections of the webpage -->
+        <h2>Intro to HTML</h2>
+        <!-- p tag is the paragraph tag; by default there will be spacing around the p tag -->
+        <p>
+            HTML stands for HyperText Markup Language. HTML provides the structure of our webpages by putting tags around text and images (otherwise known as marking up the text).
+        </p>
+<!-- Heading level 3 -->
+        <h3>History of HTML</h3>
+<!-- ul is unordered list -->
+        <ul>
+            <!-- li is list item - by default you will get abullet point in front of your text -->
+            <li>HTML 1.0 - developed in the early 1990s</li>
+            <li>HTML 2.0 - released in 1995</li>
+            <li>HTML 3.2 - released in 1997</li>
+            <li>HTML 4.01 - released in 1999</li>
+            <li>HTML 5 - released in 2014 - living standard/current version</li>
+        </ul>
+
+        <h2>Intro to CSS</h2>
+        <p>CSS stands for Cascading Style Sheets. CSS can control the layout, colors, fonts - any visual element on the page can be controlled with CSS.</p>
+
+        <h3>History of CSS</h3>
+        <ul>
+            <li>CSS1 - released in 1996</li>
+            <li>CSS2 - released in 1998</li>
+            <li>CSS3 - released in 2011 - living standard/current version</li>
+        </ul>
+
+        <h3>Basic Structure</h3>
+        <!-- pre tags allow you to display code and the browser will leave it alone -->
+        <pre>
+    selector{
+        property: value;
+    }        
+        </pre>
+
+        <h3>The CSS groups of 3</h3>
+        <!-- this is an Inline style - use sparingly -->
+        <h4 style="color: green;">3 ways to include CSS in our pages</h4>
+        <ul>
+            <li>External (seperate CSS file)</li>
+            <li>Embedded (place the CSS on a single HTML page)</li>
+            <li>Inline (add CSS to a particular HTML element)</li>
+        </ul>
+
+        <h4>CSS Selectors</h4>
+        <ul>
+            <li>HTML element (easiest, most global)</li>
+            <li>Custon class (we create a selector - add . at the beginning)</li>
+            <li>ID of an HTML element (add # at the beginning of the selector name)</li>
+        </ul>
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+<!-- This should be the last tag on your webpage -->
+</html>

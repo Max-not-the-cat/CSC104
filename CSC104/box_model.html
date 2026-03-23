@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Example</title>
+    <!-- Embedded CSS styles - they only apply to this page -->
+    <style>
+        /* add a border to the outer div so we can see what is happening with the margin of the inner div */
+        .outerEdge{
+            border: 5px solid green;
+        }
+        /* this is the area where we will show off all of the spacing options */
+        /* if height does not work, the element is probably an inline element - change the display to block or inline-block */
+        .content{
+            width: 200px;
+            /* height works here because div is a block element */
+            height: 200px;
+            
+            /* padding - the area around our content */
+            padding: 20px; /* the simple way to get symetrical padding */
+
+            /* set specific dimentions to specific parts of the border */
+            padding-top: 50px;
+            padding-right: 25px;
+            padding-left: 80px;
+            padding-bottom: 40px;
+
+            /* the padding shorthand - top, right, bottom, left (clockwise) */
+            padding: 30px 40px 50px 20px;
+
+            /* another padding shorthand, where you set the top and right; bottom and left use the respective values */
+            padding: 80px 40px;
+
+            border: 8px solid blueviolet;
+
+            /* margin - area outside of the border */
+            margin: 20px;
+
+            /* set specific dimentions to specific parts of the margin */
+            margin-top: 50px;
+            margin-right: 25px;
+            margin-left: 40px;
+            margin-bottom: 40px;
+
+            /* the margin shorthand - top, right, bottom, left (clockwise) */
+            margin: 30px 40px 50px 20px;
+
+            /* another margin shorthand, where you set the top and right; bottom and left use the respective values */
+            margin: 80px 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Box Model Example</h1>
+    </header>
+    
+    <main>
+        <ul>
+            <li>Content: the innermost area where the text and/or images are located</li>
+            <li>Padding: the space between the content and border</li>
+            <li>Border: the edge around the padding and content</li>
+            <li>Margin: the outermost space that separates this element from other elements</li>
+        </ul>
+        <div class="outerEdge">
+            <div class="content">
+                This is my div content
+            </div>
+        </div>
+    </main>
+</body>
+</html>

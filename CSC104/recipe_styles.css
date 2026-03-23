@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('./images/recipe_bg.jpg');
+    background-position: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.content-bg{
+    background-color: rgba(54, 16, 16, .8);
+    color: whitesmoke;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* menu styles */
+/* by specifying nav ul this will only apply to ul's located in the nav section */
+nav ul{
+    /* this removes the bullet points */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li{
+    /* the default display for li is block - it will take up the whole row
+       inline styles appear next to each other, but lose the ability to set the height;
+       inline-block is the best of both worlds - the items will appear next to each other and you can set height */
+    display: inline-block;
+}
+
+/* change the link styles */
+nav ul li a{
+    color: whitesmoke;
+    background-color: rgb(58, 1, 1);
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    background-color: whitesmoke;
+    color: rgb(58, 1, 1);
+}
+
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-column{
+    flex: 1;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid maroon;
+}
+
+article img{
+    width: 80%;
+    max-width: 800px;
+    border-radius: 10px;
+}
+
+/* media queries make the site look different depending on screen size */
+@media (max-width: 900px){
+    .flex-container{
+        /* overriding the default flex-direction: row and setting it to column will allow the items to stack vertically on the smaller screen size */
+        flex-direction: column;
+    }
+}
