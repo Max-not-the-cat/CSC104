@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Example</title>
+
+    <!-- embedded styles; TODO: move to an external CSS file -->
+    <style>
+        table{
+            max-width: 500px;
+            width: 100%;
+            border: 3px solid purple;
+            /* this will have borders in the same place collapse into a single border - it looks better, but the naming of this style is not intuitive */
+            border-collapse: collapse;
+        }
+
+        caption{
+            font-weight: bold;
+            font-size: larger;
+            color: purple;
+        }
+
+        th{
+            text-align: left;
+            padding: 10px;
+            color: rgb(5, 5, 70);
+        }
+
+        td{
+            padding: 5px;
+        }
+
+        tr{
+            color:rgb(23, 23, 138);
+            background-color: whitesmoke;
+            border: 2px solid rgb(5, 5, 70);
+        }
+
+        /* if you want to add styles to the even rows */
+        tr:nth-child(even){
+            background-color:rgb(81, 81, 178);
+            color: whitesmoke;
+        }
+
+        /* add a style just for th with a scope of row */
+        tbody th[scope="row"]{
+            font-weight: normal;
+            text-align: right;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Table Example</h1>
+    </header>
+
+    <main>
+        <!-- when adding a table, add the table tag as the container -->
+        <table>
+            <!-- add a caption to explain what data the table is showing -->
+            <caption>Interesting Facts</caption>
+            <!-- thead section defines the column names -->
+            <thead>
+                <!-- tr is table row - each row of information and the column titles should be contained within tr tags -->
+                <tr>
+                    <!-- th is the column title (table heading); scope=col is for giving context to the screen readers -->
+                    <th scope="col">Number</th>
+                    <th scope="col">Fact</th>
+                    <th scope="col">Reaction</th>
+                </tr>
+
+                <!-- now let's add the data for the table -->
+                <tbody>
+                    <!-- row of data -->
+                    <tr>
+                        <!-- scope=row helps give the user more context as to which row of data they are getting information about -->
+                        <th scope="row">1</th>
+                        <!-- td is the table data - column or cell -->
+                        <td>Honey rarely spoils</td>
+                        <td>Wow</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>The Eiffel Tower is taller in the summer</td>
+                        <td>Science is amazing</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>The first PC virus was created in the 1980's</td>
+                        <td>Yikes</td>
+                    </tr>
+                </tbody>
+            </thead>
+        </table>
+    </main>
+</body>
+</html>
