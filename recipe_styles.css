@@ -66,6 +66,68 @@ article img{
     border-radius: 10px;
 }
 
+/* this is mty form styles */
+
+form{
+    max-width: 400px;
+padding: 20px;
+border-radius: 10px;
+border: 2px solid black;
+box-shadow: 0 0 5px tan;
+background-color: aqua;
+/* this will sometime allow content to be centere3d since the browser has to figure out equal spacing on the left and right because of it being set to auto so the 0 is for top and bottom margins */
+margin: 0 auto;
+}
+input{
+width: 50%;
+padding: 5px;
+margin: 5px;
+border-radius: 5px;
+border: 2px solid grey;
+box-shadow: 0 0 2px tan;
+}
+
+input[type="password"], input[type="email"]{
+    color: navy;
+}
+
+input[type="number"]{
+    width: 25%;
+}
+
+input:focus{
+    border: 2px solid blue;
+}
+
+button{
+
+    padding: 8px;
+    color: royalblue;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 0 3px red;
+    cursor: pointer;
+    margin-top: 10px;
+
+}
+
+button:hover{
+    background-color: rgb(172, 164, 164);
+
+    
+}
+
+
+label{
+font-weight: bold;
+width: 50%;
+text-align: right;
+}
+
+
+
+
 /* media queries make the site look different depending on screen size */
 @media (max-width: 900px){
     .flex-container{

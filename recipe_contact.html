@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rae's Recipes ~ Contact Me</title>
+
+    <link rel="stylesheet" href="recipe_styles.css">
+</head>
+<body>
+    <header class="content-bg">
+        <nav>
+            <ul>
+                <li><a href="recipe_home.html">Home</a></li>
+                <li><a href="recipe_list.html">Recipe List</a></li>
+                <li><a href="recipe_details.html">Recipe Details</a></li>
+                                <li><a href="recipe_contact.html">Contact Me</a></li>
+
+            </ul>
+        </nav>
+        <h1>
+            Contact me using the form!
+        </h1>
+    </header>
+    <main class="content-bg">
+        <!-- 
+        when you need to collect information from a user use a form name and id should be set to the same value
+        action - the name of the page that the form will send the info to - can be the same page or a different page
+        method - post or get are the most common op[tions - post is secure and should be used 99.9% of the time
+        get - the info is sent in plain text in the URL field - make sure you have a good reason for using get
+        -->
+        <form name="frmContact" id="frmContact" action="#" method="post">
+       <!-- Label should be used with most form elements the value in the for attribute should match the name and id of your input element
+             -->
+       <div>
+            <label for="txtName">
+                Your Name:
+            </label>
+            <!-- text is the most commonly used input type; set the name and id to the same value; use placehold if it would help to make the user experience better; required can be added if the form shouldn't submit without a value being entered by the user
+             - it doesnt validate that the value is proper
+             -->
+            <input type="text" id="txtName" name="txtName" placeholder="Your Name" required>
+        </div>
+            <!-- ** Email input **
+             -->
+         <div>
+             <label for="emlAddr">
+                Your Email:
+            </label>
+            <input type="email" id="emlAddr" name="emlAddr" placeholder="yourname@domain.com" required>
+        </div>
+        <div>
+            <label for="passKey">
+               Password:
+           </label>
+           <input type="password" id="passKey" name="passKey" placeholder="*********" required>
+       </div>
+
+       <!-- number input -->
+        <div>
+
+            <label for="numTimesCooked">
+                Times Cooked:
+            </label>
+            <input type="number" name="numTimesCooked" id="numTimesCooked">
+
+        </div>
+
+        
+
+       <button type="submit">
+        Send Message
+       </button>
+        </form>
+    </main>
+</body>
+</html>
